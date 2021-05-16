@@ -1,0 +1,454 @@
+.headContainer{
+    width: 100%;
+    height: 800px;
+    background-image: url('../images/1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menuContainer{
+    width: 100%;
+    display: flex;
+    margin: 0px;
+    flex-direction: row;
+}
+.mobilemenu{
+    display: block;
+    width: 140px;
+    background-color: #3a416f;
+    padding: 8px 0px 8px 30px;
+    border-radius: 16px;
+    position: absolute;
+    left: -10px;
+    top: 110px;
+}
+.mobilemenu li{
+    list-style-type: none;
+    margin-top: 6px;
+    text-align: left;
+}
+.mobilemenu li a{
+    font-family: Roboto;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 200%;
+    font-style: normal;
+    font-weight: 400;
+    padding-bottom: 5px;
+}
+.dropDownMenuIcon{
+    display: none;
+}
+.dropDownSearchIcon{
+    display: none;
+}
+.dropDownMenuIcon a{
+    font-size: 30px !important;
+}
+.dropdownMenu{
+    display: none;
+}
+.listMenu{
+    flex: 2;
+    margin-top: 10px;
+}
+.listMenuUl li{
+    float: left;
+    list-style-type: none;
+    margin-right: 36px;
+}
+.listMenuUl{
+    margin-top: 45px;
+}
+.listMenuUl li a{
+    font-family: Roboto;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 200%;
+    font-style: normal;
+    font-weight: 400;
+}
+.custom_menu:after, .custom_menu:before {
+    display:block;
+    content: '';
+    border-bottom: 2px solid #F68A90; 
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+  }
+.custom_menu:hover:after{ transform: scaleX(1); }
+.logoContainer{
+    flex: 3;
+    text-align: center;
+    padding-top: 20px;
+}
+.logoContainer a{
+    text-decoration: none;
+    color: #fff;
+}
+.logoContainer a h1{
+    margin-top: -10px !important;
+    font-size: 44px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: Roboto;
+    margin: 0px;
+}
+.logoDesc{
+    font-family: Roboto;
+    font-size: 10px;
+    text-transform: uppercase;
+    margin: 0px;
+}
+.searchContainer{
+    flex: 1;
+    text-align: center;
+    position: relative;
+    height: 500px;
+    margin-top: -40px;
+}
+.searchBox{
+    position: absolute;
+    right: 0;
+    margin-top: 30px !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px 0px 16px;
+
+    position: absolute;
+    width: 260px;
+    height: 44px;
+    top: 62px;
+
+    background: #F7F8FB;
+    border-radius: 8px;
+}
+.searchValue{
+    display: 9;
+    width: 80%;
+    height: 20px;
+    border: none;
+    background: #F7F8FB;
+    font-size: 13px;
+    outline: none;
+}
+.searchExitIcon{
+    text-align: center;
+    margin-right: 6%;
+}
+.searchResults{
+    position: absolute;
+    display: block;
+    top: 25%;
+    width: 350%;
+    right: 0;
+    background-color: #F7F8FB;
+}
+.searchResults .header{
+    padding: 5px 50px 5px 50px;
+    text-align: left;
+}
+.searchResults .body{
+    display: flex;
+    margin: 0px;
+    flex-direction: row;
+}
+.searchResults .body .data{
+    flex: 8;
+    background-color: #fff;
+}
+.searchItem{
+    width: 40%;
+    float: left;
+    padding: 8px;
+    padding-left: 40px;
+    padding-top: 20px;
+    text-align: left;
+    vertical-align: middle;
+}
+.searchItem img{
+    border-radius: 12px;
+    width: 25%;
+    float: left;
+    margin-right: 13px;
+}
+.searchItem h4{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 17px;
+    vertical-align: middle;
+}
+.redColor{
+    color: #a51c30;
+}
+
+
+.searchItem h4 small{
+    text-decoration-line: line-through;
+    margin-right: 7px;
+}
+.searchResults .body .categories{
+    flex: 2;
+}
+.searchResults .body .categories ul li{
+    list-style-type: none;
+    text-align: left;
+    padding: 6px;
+}
+.searchResults .body .categories ul li a{
+    font-family: Lato;
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 17px;
+}
+.viewallStyle{
+    padding-bottom: 20px;
+}
+.viewallStyle li{
+    float: left;
+    list-style-type: none;
+    margin-right: 8px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 17px;
+}
+.viewallStyle li a{
+    float: left;
+    list-style-type: none;
+    margin-left: 8px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 17px;
+    color: #000;
+}
+.underline{
+    text-decoration-line: underline;
+}
+.iconContainer{
+    flex: 1;
+    margin-top: 7px;
+}
+.customIcon{
+    font-size: 30px !important;
+}
+.descriptionBox{
+    position: absolute;
+    right: 120px;
+    top: 20%;
+}
+.descriptionBox .descHead{
+    font-family: lato;
+    font-weight: 700;
+    font-size: normal;
+    font-size: 90px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+.descriptionBox .descSale{
+    font-family: "Mr Dafoe";
+    font-weight: 400;
+    font-size: normal;
+    font-size: 82px;
+    text-align: center;
+    color: #E85757;
+    transform: rotate(-8.99deg);
+    margin-top: -120px;
+}
+.descriptionBox .listOfSales{
+
+}
+.descriptionBox .listOfSales li{
+    list-style-type: none;
+    text-align: left;
+    float: left;
+    font-family: lato;
+    font-weight: bold;
+    font-size: normal;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.09);
+    margin-right: 20px;
+}
+.descriptionBox .listOfSales .percent{
+    font-size: 135px;
+    margin-top: -70px;
+}
+.justBot{
+    margin-top: 30px;
+}
+.shopNow{
+    margin-top: 60px;
+    width: 200px;
+    height: 54px;
+    background-color: #fff;
+    border-radius: 10px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 138.19%;
+    text-transform: uppercase;
+    color: #000000;
+    border: none;
+}
+@media only screen and (max-width: 1280px) {
+    .headContainer{
+        height: 600px;
+    }
+    .custom_menu{
+        display: none;
+    }
+    .dropDownMenuIcon{
+        display: block;
+    }
+    .dropDownSearchIcon{
+        display: block;
+        margin-top: 5px !important;
+    }
+    .dropDownSearchIcon a{
+        margin-left: -20px;
+        position: absolute;
+        z-index: 99999;
+        font-size: 25px !important;
+    }
+    .mobilemenu li a:after, .mobilemenu li a:before {
+        display:block;
+        content: '';
+        border-bottom: 2px solid #F68A90; 
+        transform: scaleX(0);  
+        transition: transform 250ms ease-in-out;
+      }
+    .mobilemenu li a:hover:after{ transform: scaleX(1); }
+    .listMenuUl{
+        margin-top: 0px;
+    }
+    .listMenu{
+        flex: 1;
+    }
+    .customIcon{
+        font-size: 25px !important;
+        margin-right: -50px;
+    }
+    .searchContainer{
+        display: none;
+    }
+    .resSearchBar{
+        display: block;
+        position: absolute;
+        width: 90%;
+    }
+    .resSearchBar .searchBox{
+        position: absolute;
+        width: 100%;
+        top: 100px;
+        left: 10px;
+    }
+    .resSearchBar .searchResults{
+        width: 102.2%;
+        top: 33.6%;
+        left: 10px;
+        border-radius: 10px;
+    }
+    .descriptionBox{
+        margin-top: 80px;
+        right: 20px;
+    }
+    .descriptionBox .descHead{
+        font-size: 50px;
+    }
+    .descriptionBox .descSale{
+        font-size: 52px;
+        margin-top: -70px;
+    }
+    .descriptionBox .listOfSales li{
+        font-size: 18px;
+    }
+    .descriptionBox .listOfSales .percent{
+        font-size: 75px;
+        margin-top: -40px;
+    }
+    .justBot{
+        margin-top: 15px;
+    }
+    .shopNow{
+        margin-top: 30px;
+        width: 145px;
+        height: 42px;
+        border: none;
+    }
+    
+  }
+
+  @media only screen and (max-width: 600px) {
+    .headContainer{
+        height: 800px;
+    }
+    .descriptionBox{
+        left: 5%;
+        width: 90%;
+        height: 400px;
+        top: 80%;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(238, 243, 255, 0.8) 100%);
+        backdrop-filter: blur(50px);
+        /* Note: backdrop-filter has minimal browser support */
+
+        border-radius: 9px;
+    }
+    .listMenu{
+        flex: 2;
+    }
+    .logoContainer{
+        flex: 1;
+    }
+    .descriptionBox .descHead{
+        font-size: 60px;
+        color: #181818;
+    }
+    .descriptionBox .descSale{
+        font-size: 62px;
+        margin-top: -70px;
+    }
+    .descriptionBox .listOfSales li{
+        font-size: 20px;
+        color: #000000;
+    }
+    .descriptionBox .listOfSales .percent{
+        font-size: 85px;
+        margin-top: -40px;
+    }
+    .justBot{
+        margin-top: 15px;
+    }
+    .shopNow{
+        background-color: #272727;
+        color: #fff;
+        border: none;
+        font-size: 18px;
+        margin-top: 30px;
+        width: 167px;
+        height: 49px;
+    }
+    .iconContainer{
+        padding-top: 10px !important;
+        flex: 2;
+    }
+    .customIcon{
+        font-size: 20px !important;
+        margin-right: -20px;
+    }
+  }

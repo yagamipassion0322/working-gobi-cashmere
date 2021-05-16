@@ -1,0 +1,44 @@
+.footbarContainer{
+    padding: 10px;
+    text-align: left;
+    background: linear-gradient(0deg, #F5F7F6, #F5F7F6), #FFFFFF;
+    padding-left: 10%;
+}
+.footbarContainer p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 140.69%;
+
+    color: #575F61;
+}
+.assetFoot{
+    display: none
+}
+.footbarContainer img{
+    width: 200px !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .footbarContainer{
+        text-align: center;
+    }
+    .assetFoot{
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .footbarContainer{
+        display: flex;
+        flex-direction: row;
+    }
+    .footbarContainer div{
+        display: flex;
+        flex: 1;
+    }
+    .assetFoot{
+        display: block;
+    }
+}

@@ -1,0 +1,66 @@
+.nav{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #3a416f;
+}
+.topBar{
+    width: 100%;
+    display: flex;
+    margin: 0px;
+    flex-direction: row;
+}
+.langbox{
+    margin: 0px;
+    padding: 0px;
+    flex: 2;
+}
+.links{
+    text-decoration: underline;
+}
+.orderbox{
+    margin: 0px;
+    padding: 0px;
+    flex: 4;
+}
+.signbox{
+    margin: 0px;
+    padding: 0px;
+    flex: 1;
+    position: absolute;
+    right: 30px;
+}
+.menu{
+    padding: 12px 0 20px 80px;
+}
+.menu li{
+    float: left;
+    list-style-type: none;
+}
+.getLinks{
+    color: #f0f0f1;
+    font-size: 15px;
+    margin-right: 12px;
+}
+.Lang_Icon{
+    color: #f0f0f1;
+    font-size: 24px;
+    margin-right: 12px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .orderbox {
+      display: none;
+    }
+    .langbox{
+        flex: 1
+    }
+    .menu{
+        padding: 12px 0 20px 10px;
+    }
+    .signbox{
+        flex: 1;
+        position: absolute;
+        right: 10px;
+    }
+  }

@@ -1,0 +1,250 @@
+.AboutContainer{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.AboutImageContainer{
+    flex: 5;
+    position: relative;
+}
+.AboutImageContainer img{
+    width: 100%;
+    border-radius: 5px;
+}
+.AboutUsContainer{
+    flex: 3;
+    background-color: #F5F7F6;
+    position: relative;
+}
+.AboutUsContainer div{
+    left: 10%;
+    width: 80%;
+    vertical-align: middle;
+    text-align: left;
+    position: absolute;
+    top: 10%;
+    z-index: 500;
+}
+.aboutImagesContainer{
+    display: none;
+}
+.AboutUsContainer div h1{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 106.3%;
+    /* or 36px */
+
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+
+    color: #1F1F1F;
+
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.09);
+}
+.AboutUsContainer div p{
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 142.3%;
+    /* or 23px */
+
+
+    color: #353535;
+}
+.AboutUsContainer button{
+    width: 170px;
+    height: 56px;
+    border: none;
+
+    background: #272727;
+    border-radius: 10px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 138.19%;
+    /* identical to box height, or 25px */
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+.AboutImagessContainer{
+    position: absolute;
+    width: 60%;
+    height: 450px;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    margin-right: 70px;
+}
+.AboutImagessContainer img{
+    margin-left: 50px;
+    width: 360px;
+    border-radius: 10px;
+}
+.AboutUsMobileContainer{
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    .AboutUsMobileContainer{
+        display: block;
+        background-color: #F5F7F6;
+        position: relative;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        margin-top: 40px;
+    }
+    .AboutUsMobileContainer h1{
+        font-size: 20px;
+    }
+    .AboutUsMobileContainer p{
+        font-size: 12px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .AboutUsMobileContainer button{
+        width: 170px;
+        height: 42px;
+        border: none;
+
+        background: #272727;
+        border-radius: 10px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 138.19%;
+        /* identical to box height, or 25px */
+
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+    }
+    .AboutContainer{
+        flex-direction: row !important;
+    }
+    .AboutImageContainer{
+        flex: 4;
+        position: relative;
+        display: block;
+    }
+    .aboutImagesContainer{
+        display: block;
+        position: relative;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .AboutUsContainer h1, .AboutUsContainer p, .AboutUsContainer button{
+        display: none;
+    }
+    .AboutImagessContainer{
+        display: none;
+    }
+    .AboutUsContainer div{
+        position: relative;
+    }
+    .AboutUsContainer{
+        flex: 2;
+        position: relative;
+        background-color: transparent;
+    }
+    .aboutImagesContainer img{
+        display: flex;
+        width: 100%;
+        position: relative;
+        border-radius: 10px;
+        margin-bottom: 8px;
+    }
+    .AboutUsContainer div{
+        margin-top: -80px !important;
+    }
+}
+@media only screen and (max-width: 1800px) {
+    .AboutImagessContainer{
+        height: 400px;
+    }
+}
+@media only screen and (max-width: 1700px) {
+    .AboutImagessContainer{
+        height: 380px;
+    }
+}
+@media only screen and (max-width: 1600px) {
+    .AboutImagessContainer{
+        height: 330px;
+    }
+    .AboutImagessContainer img{
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 1500px) {
+    .AboutImagessContainer{
+        height: 230px;
+    }
+    .AboutImagessContainer img{
+        width: 200px;
+    }
+}
+@media only screen and (max-width: 1300px) {
+    .AboutImagessContainer{
+        height: 180px;
+    }
+    .AboutImagessContainer img{
+        width: 150px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .AboutImagessContainer{
+        height: 120px;
+    }
+    .AboutImagessContainer img{
+        width: 100px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .AboutImagessContainer{
+        display: none;
+    }
+    .AboutImagessContainer img{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .AboutContainer{
+        flex-direction: column;
+    }
+    .AboutUsContainer 
+    .AboutImagessContainer{
+        display: none;
+    }
+    .AboutUsContainer div{
+        position: relative;
+        margin-bottom: 50px;
+    }
+    .AboutImagessContainer img{
+        display: none;
+    }
+    .AboutUsContainer div{
+        text-align: center;
+    }
+    .AboutUsContainer div h1{
+        font-size: 36px;
+    }
+    .AboutUsContainer div p{
+        font-size: 14px;
+    }
+    .AboutUsContainer button{
+        width: 170px;
+        height: 42px;
+        font-size: 14px;
+    }
+}
